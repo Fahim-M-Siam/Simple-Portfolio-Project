@@ -1,3 +1,6 @@
+html{
+   scroll-behavior: smooth;
+}
 *{
    margin: 0;
    padding: 0;
@@ -10,9 +13,7 @@
 
 /* hero section */
 #hero{
-   position: relative;
    width: 100%;
-   height: 100vh;
    background: #eff4fd;
 }
 nav{
@@ -39,6 +40,9 @@ nav img{
 }
 
 /* banner section */
+.banner{
+   display: flex;
+}
 .details{
    margin-left: 8%;
    margin-top: 13%;
@@ -75,15 +79,14 @@ span{
    color: #000;
 }
 .myself{
-   width: 45%;
-   height: 80%;
-   position: absolute;
-   bottom: 10%;
-   right: 100px;
+   width: 70%;
+   position: relative;
+   top: 330px;
 }
 .myself img{
    height: 100%;
    position: absolute;
+   margin-left: 160px;
    left: 50%;
    bottom: 0;
    transition: bottom 1s, left 1s;
@@ -188,14 +191,10 @@ text-align: start;
 }
 
 /* project part */
-#project{
-   margin-bottom: 100px;
+#project {
+   margin-top: 60px;
+   padding: 50px 0;
 }
-
-.project_head {
-   text-align: center;
-}
-
 .project_head h3 {
    padding-top: 90px;
    font-family: Dancing Script;
@@ -203,7 +202,9 @@ text-align: start;
    font-weight: 700;
    color: #333333;
 }
-
+.project_head {
+   text-align: center;
+}
 .project_head h2 {
    padding-top: 24px;
    font-family: Montserrat;
@@ -213,29 +214,17 @@ text-align: start;
    text-transform: uppercase;
    position: relative;
 }
-
 .project_head h2::after {
    position: absolute;
    content: '';
    top: 90px;
-   left: 890px;
+   left: 610px;
    height: 2px;
    width: 60px;
    background-color: red;
 }
-
-.project_head p {
-   margin-left: 430px;
-   padding-top: 75px;
-   font-family: Roboto;
-   font-size: 15px;
-   font-weight: 400;
-   color: #b3b3b3;
-   margin-bottom: 105px;
-   width: 960px;
-}
 .project_btn{
-   padding-top: 40px;
+   padding-top: 100px;
 }
 .project_btn ul{
    text-align: center;
@@ -262,13 +251,17 @@ text-align: start;
 .project_btn ul li a:hover{
    background-color: red;
    color: #000;
+   cursor: pointer;
 }
 .project_main{
    padding-top: 40px;
 }
+.project_top,
+.project_bottom{
+   display: flex;
+}
 .project_item{
    width: 30.33%;
-   float: left;
    margin: 15px 15px;
 }
 .project_img{
@@ -330,13 +323,14 @@ text-align: start;
 }
 .project_inner:hover .project_text,
 .project_inner:hover .project_text::after{
-   background-color: #362f2d;
+   background-color: #B20000;
+   cursor: pointer;
 }
 .project_text h3{
    font-family: 'Raleway', sans-serif;
    font-size: 20px;
    font-weight: 400;
-   color: #c7b299;
+   color: #555;
 }
 .project_text p{
    font-family: 'Montserrat', sans-serif;
@@ -347,7 +341,7 @@ text-align: start;
    color: #fff;
 }
 .project_inner:hover .project_text p{
-   color: #988775;
+   color: #000;
 }
 .project_load_btn{
    text-align: center;
@@ -355,20 +349,22 @@ text-align: start;
 }
 .project_load_btn a{
    padding: 18px 44px;
-   background-color: #998675;
+   background-color: #000;
    text-transform: uppercase;
    color: #fff;
    font-family: 'Raleway', sans-serif;
    font-size: 14px;
-   font-weight: 500;
+   font-weight: 700;
    border-radius: 4px;
+   text-decoration: none;
    -webkit-border-radius: 4px;
    -moz-border-radius: 4px;
    -ms-border-radius: 4px;
    -o-border-radius: 4px;
 }
 .project_load_btn a:hover{
-   background-color: #7e7468
+   background-color: #B20000;
+   color: #000;
 }
 
 /* skill part */
@@ -412,16 +408,10 @@ text-align: start;
    margin-top: 60px;
 }
 
-.skill_top {
+.skill_top,
+.skill_btom{
    display: flex;
-   justify-content: space-between;
 }
-
-.skill_btom {
-   display: flex;
-   justify-content: space-between;
-}
-
 .skill_item {
    padding-left: 50px;
    position: relative;
@@ -462,3 +452,221 @@ text-align: start;
    padding-top: 50px;
    border-top: 2px solid #e5e5e5;
 }
+
+/* contact part */
+#hire {
+   margin-top: 60px;
+   padding: 50px 0;
+}
+.hire_head {
+   text-align: center;
+}
+.hire_head h3 {
+   padding-top: 90px;
+   font-family: Dancing Script;
+   font-size: 24px;
+   font-weight: 700;
+   color: #333333;
+}
+.hire_head h2 {
+   padding-top: 24px;
+   font-family: Montserrat;
+   font-size: 30px;
+   font-weight: 700;
+   color: #333333;
+   text-transform: uppercase;
+   position: relative;
+}
+.hire_head h2::after {
+   position: absolute;
+   content: '';
+   top: 90px;
+   left: 610px;
+   height: 2px;
+   width: 60px;
+   background-color: red;
+}
+.hire_main{
+   display: flex;
+   margin-top: 100px;
+}
+.hire_img{
+   margin-top: 40px;
+   margin-left: 70px;
+}
+.hire_text{
+   margin-top: 80px;
+   margin-left: 80px;
+}
+.hire_text h2{
+   font-family: Montserrat;
+   font-size: 30px;
+   font-weight: 700;
+   color: #333333;
+   text-transform: uppercase;
+}
+.hire_text p{
+   width: 670px;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   color: #8c8c8c;
+   line-height: 24px;
+   margin-top: 10px;
+}
+.hire_icon{
+   margin-left: 30px;
+   margin-top: 35px;
+}
+.hire_icon ul li{
+   padding: 6px 0;
+   list-style: none;
+}
+.hire_icon ul li i{
+   padding-right: 30px;
+   color: #555;
+}
+.hire_icon ul li span{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+   color: #8c8c8c;
+}
+.hire_icon .icon{
+   margin-left: 88%;
+   margin-top: -26px;
+}
+.hire_icon .icon a{
+   color: #333333;
+   font-size: 20px;
+   padding: 20px 0;
+}
+.hire_icon .icon a:hover{
+   color: red;
+};
+
+/* contact part */
+#contact {
+   margin-top: 60px;
+   padding: 50px 0px;
+   
+}
+.contact_head {
+   text-align: center;
+}
+.contact_head h3 {
+   padding-top: 90px;
+   font-family: Dancing Script;
+   font-size: 24px;
+   font-weight: 700;
+   color: #333333;
+}
+.contact_head h2 {
+   padding-top: 24px;
+   font-family: Montserrat;
+   font-size: 30px;
+   font-weight: 700;
+   color: #333333;
+   text-transform: uppercase;
+   position: relative;
+}
+.contact_head h2::after {
+   position: absolute;
+   content: '';
+   top: 90px;
+   left: 610px;
+   height: 2px;
+   width: 60px;
+   background-color: red;
+}
+.contact_main{
+ margin-top: 40px;
+ padding: 50px 100px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.box {
+   position: relative;
+}
+.box i{
+   position: absolute;
+   top: 2px;
+   left: -30px;
+   font-size: 20px;
+   color: #000;
+}
+.box i:hover{
+   cursor: pointer;
+   color: red;
+}
+.box h2{
+   font-family: Montserrat;
+   font-size: 18px;
+   font-weight: 400;
+}
+.contact_form{
+   width: 40%;
+   padding: 40px;
+   background: #e5e5e5;
+}
+.contact_form h2{
+   font-size: 30px;
+   color: #333;
+   font-weight: 500;
+}
+.contact_form .inputBox{
+   position: relative;
+   width: 100%;
+   margin-top: 10px;
+}
+.contact_form .inputBox input,
+.contact_form .inputBox textarea
+{
+   width: 100%;
+   padding: 5px 0;
+   font-size: 16px;
+   margin: 10px 0;
+   border: none;
+   border-bottom: 2px solid #333;
+   outline: none;
+   resize: none;
+}
+.contact_form .inputBox span{
+   position: absolute;
+   left: 0;
+   padding: 5px 0;
+   font-size: 16px;
+   margin: 10px 0;
+   pointer-events: none;
+   transition: 0.5s;
+   color: #666;
+   -webkit-transition: 0.5s;
+   -moz-transition: 0.5s;
+   -ms-transition: 0.5s;
+   -o-transition: 0.5s;
+}
+.contact_form .inputBox input:focus ~ span,
+.contact_form .inputBox input:valid ~ span,
+.contact_form .inputBox textarea:focus ~ span,
+.contact_form .inputBox textarea:valid ~ span
+{
+   color: #e91e63;
+   font-size: 12px;
+   transform: translateY(-20px);
+   -webkit-transform: translateY(-20px);
+   -moz-transform: translateY(-20px);
+   -ms-transform: translateY(-20px);
+   -o-transform: translateY(-20px);
+}
+.contact_form .inputBox input[type="Submit"]
+{
+   width: 100px;
+   background: #00bcd4;
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   padding: 10px;
+   font-size: 18px;
+}
+
