@@ -35,6 +35,7 @@ nav img{
 }
 .navbar ul li:hover{
    color: red;
+   cursor: pointer;
 }
 
 /* banner section */
@@ -110,4 +111,354 @@ bottom: 40px;
 }
 .myself:hover .fahim{
  left: 45%; 
+}
+
+/* about part */
+#about {
+   margin-top: 330px;
+   padding: 50px 0;
+}
+
+.about_head h3 {
+   padding-top: 90px;
+   font-family: Dancing Script;
+   font-size: 24px;
+   font-weight: 700;
+   color: #333333;
+}
+
+.about_head {
+   text-align: center;
+}
+
+.about_head h2 {
+   padding-top: 24px;
+   font-family: Montserrat;
+   font-size: 30px;
+   font-weight: 700;
+   color: #333333;
+   text-transform: uppercase;
+   position: relative;
+}
+
+.about_head h2::after {
+   position: absolute;
+   content: '';
+   top: 90px;
+   left: 610px;
+   height: 2px;
+   width: 60px;
+   background-color: red;
+}
+.about_myself{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.about_myself .about_detail p{
+   width: 565px;
+   line-height: 26px;
+   font-family: Roboto;
+   font-size: 18px;
+   font-weight: 700;
+   color: #555;
+   margin-bottom: 105px;
+}
+.about_detail{
+   margin-top: 170px;
+}
+.social_icon{
+   margin-top: -35px;
+   margin-left: -10px;
+}
+.social_icon .icon{
+text-align: start;
+}
+.social_icon .icon i{
+   font-size: 30px;
+   padding: 0 15px;
+   color: #000;
+}
+.social_icon .icon i:hover{
+  color: red;
+}
+.about_img{
+   margin-top: 100px;
+}
+
+/* project part */
+#project{
+   margin-bottom: 100px;
+}
+
+.project_head {
+   text-align: center;
+}
+
+.project_head h3 {
+   padding-top: 90px;
+   font-family: Dancing Script;
+   font-size: 24px;
+   font-weight: 700;
+   color: #333333;
+}
+
+.project_head h2 {
+   padding-top: 24px;
+   font-family: Montserrat;
+   font-size: 30px;
+   font-weight: 700;
+   color: #333333;
+   text-transform: uppercase;
+   position: relative;
+}
+
+.project_head h2::after {
+   position: absolute;
+   content: '';
+   top: 90px;
+   left: 890px;
+   height: 2px;
+   width: 60px;
+   background-color: red;
+}
+
+.project_head p {
+   margin-left: 430px;
+   padding-top: 75px;
+   font-family: Roboto;
+   font-size: 15px;
+   font-weight: 400;
+   color: #b3b3b3;
+   margin-bottom: 105px;
+   width: 960px;
+}
+.project_btn{
+   padding-top: 40px;
+}
+.project_btn ul{
+   text-align: center;
+}
+.project_btn ul li{
+   display: inline-block;
+   margin: 0 4px;
+}
+.project_btn ul li a{
+   text-decoration: none;
+   text-transform: capitalize;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 16px;
+   font-weight: 700;
+   color: black;
+   padding: 10px 25px;
+   border: 2px solid #ebebeb;
+   border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -ms-border-radius: 3px;
+   -o-border-radius: 3px;
+}
+.project_btn ul li a:hover{
+   background-color: red;
+   color: #000;
+}
+.project_main{
+   padding-top: 40px;
+}
+.project_item{
+   width: 30.33%;
+   float: left;
+   margin: 15px 15px;
+}
+.project_img{
+   position: relative;
+}
+.project_overlay{
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   opacity: 0;
+}
+.project_inner:hover .project_overlay{
+   opacity: 1;
+}
+.project_overlay .icon{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+}
+.project_overlay .icon i{
+   color: #fff;
+   font-size: 24px;
+   margin: 0 5px;
+}
+.project_overlay .icon i:hover{
+   color: #c7b299;
+}
+.project_img img{
+   width: 100%;
+}
+.project_text{
+   padding-top: 25px;
+   padding-bottom: 25px;
+   padding-left: 25px;
+   background-color: #fbfaf8;
+   position: relative;
+}
+.project_text::after{
+   position: absolute;
+   content: '';
+   top: 0;
+   left: 20px;
+   height: 20px;
+   width: 20px;
+   background-color: #fbfaf8;
+   transform: translateY(-50%) rotate(45deg);
+   -webkit-transform: translateY(-50%) rotate(45deg);
+   -moz-transform: translateY(-50%) rotate(45deg);
+   -ms-transform: translateY(-50%) rotate(45deg);
+   -o-transform: translateY(-50%) rotate(45deg);
+}
+.project_inner:hover .project_text,
+.project_inner:hover .project_text::after{
+   background-color: #362f2d;
+}
+.project_text h3{
+   font-family: 'Raleway', sans-serif;
+   font-size: 20px;
+   font-weight: 400;
+   color: #c7b299;
+}
+.project_text p{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 14px;
+   font-weight: 200;
+}
+.project_inner:hover .project_text h3{
+   color: #fff;
+}
+.project_inner:hover .project_text p{
+   color: #988775;
+}
+.project_load_btn{
+   text-align: center;
+   padding-top: 40px;
+}
+.project_load_btn a{
+   padding: 18px 44px;
+   background-color: #998675;
+   text-transform: uppercase;
+   color: #fff;
+   font-family: 'Raleway', sans-serif;
+   font-size: 14px;
+   font-weight: 500;
+   border-radius: 4px;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   -ms-border-radius: 4px;
+   -o-border-radius: 4px;
+}
+.project_load_btn a:hover{
+   background-color: #7e7468
+}
+
+/* skill part */
+#skills {
+   margin: 106px 0;
+}
+
+.skill_head {
+   text-align: center;
+   padding-bottom: 64px;
+}
+
+.skill_text h2 {
+   font-family: Dancing Script;
+   font-size: 24px;
+   font-weight: 700;
+   color: #333333;
+}
+
+.skill_text h1 {
+   padding-top: 24px;
+   font-family: Montserrat;
+   font-size: 30px;
+   font-weight: 700;
+   color: #333333;
+   text-transform: uppercase;
+   position: relative;
+}
+
+.skill_text h1::after {
+   position: absolute;
+   content: '';
+   top: 90px;
+   left: 615px;
+   height: 2px;
+   width: 60px;
+   background-color: red;
+}
+
+.skill_main {
+   margin-top: 60px;
+}
+
+.skill_top {
+   display: flex;
+   justify-content: space-between;
+}
+
+.skill_btom {
+   display: flex;
+   justify-content: space-between;
+}
+
+.skill_item {
+   padding-left: 50px;
+   position: relative;
+}
+
+.skill_item i {
+   position: absolute;
+   top: 15px;
+   left: 10px;
+   color: red;
+   padding: 0 50px;
+}
+
+.skill_item h3 {
+   padding-left: 50px;
+   padding-right: 50px;
+   padding-bottom: 10px;
+   font-family: Montserrat;
+   font-size: 14px;
+   font-weight: 700;
+   color: #333333;
+   text-transform: uppercase;
+}
+
+.skill_item p {
+   font-family: Roboto;
+   font-size: 12px;
+   font-weight: 400;
+   color: #555;
+   padding: 0 50px;
+}
+
+.skill_top {
+   padding-bottom: 50px;
+}
+
+.skill_btom {
+   padding-top: 50px;
+   border-top: 2px solid #e5e5e5;
 }
