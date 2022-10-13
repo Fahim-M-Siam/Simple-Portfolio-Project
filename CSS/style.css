@@ -26,15 +26,15 @@ nav{
 nav img{
    align-items: center;
 }
-.navbar ul li{
+.navbar a{
    display: inline-block;
-   list-style: none;
    margin: 0 20px;
    text-transform: uppercase;
    font-weight: 700;
    color: #000;
+   text-decoration: none;
 }
-.navbar ul li:hover{
+.navbar a:hover{
    color: red;
    cursor: pointer;
 }
