@@ -11,7 +11,7 @@ html{
    margin: 0 auto;
 }
 
-/* hero section */
+/* hero part start */
 #hero{
    width: 100%;
    background: #eff4fd;
@@ -38,8 +38,9 @@ nav img{
    color: red;
    cursor: pointer;
 }
+/* hero part end */
 
-/* banner section */
+/* banner part start */
 .banner{
    display: flex;
 }
@@ -115,8 +116,9 @@ bottom: 40px;
 .myself:hover .fahim{
  left: 45%; 
 }
+/* banner part end */
 
-/* about part */
+/* about part start */
 #about {
    margin-top: 330px;
    padding: 50px 0;
@@ -189,8 +191,9 @@ text-align: start;
 .about_img{
    margin-top: 100px;
 }
+/* about part end */
 
-/* project part */
+/* project part start */
 #project {
    margin-top: 60px;
    padding: 50px 0;
@@ -366,8 +369,9 @@ text-align: start;
    background-color: #B20000;
    color: #000;
 }
+/* project part end */
 
-/* skill part */
+/* skill part start */
 #skills {
    margin: 106px 0;
 }
@@ -452,8 +456,9 @@ text-align: start;
    padding-top: 50px;
    border-top: 2px solid #e5e5e5;
 }
+/* skill part end */
 
-/* contact part */
+/* hire part start */
 #hire {
    margin-top: 60px;
    padding: 50px 0;
@@ -518,6 +523,9 @@ text-align: start;
    margin-left: 30px;
    margin-top: 35px;
 }
+.hire_icon .special{
+   color: red;
+}
 .hire_icon ul li{
    padding: 6px 0;
    list-style: none;
@@ -543,9 +551,10 @@ text-align: start;
 }
 .hire_icon .icon a:hover{
    color: red;
-};
+}
+/* hire part start */
 
-/* contact part */
+/* contact part start */
 #contact {
    margin-top: 60px;
    padding: 50px 0px;
@@ -669,4 +678,5 @@ text-align: start;
    padding: 10px;
    font-size: 18px;
 }
+/* contact part start */
 
